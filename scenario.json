@@ -2,5 +2,5 @@
   "title": "JSCAD + NopSCAD Alias Showcase",
   "entryPath": "/index.js",
   "linkedLibraries": ["JSCAD Modeling", "NopSCAD"],
-  "features": ["jscad", "library-alias", "nopscad"]
+  "features": ["jscad", "package-imports", "nopscad"]
 }

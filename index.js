@@ -1,5 +1,5 @@
 import * as modeling from "@jscad/modeling";
-import * as roundedCylinderLib from "/Libraries/NopSCAD/utils/rounded_cylinder.scad?use";
+import * as roundedCylinderLib from "@nopscad/utils/rounded_cylinder.scad?use";
 
 export function main() {
   return modeling.booleans.union(
