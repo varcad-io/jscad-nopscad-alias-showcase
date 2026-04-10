@@ -1,0 +1,83 @@
+[
+  {
+    "type": "Section",
+    "name": "support_controls",
+    "label": "Rounded Cylinder",
+    "description": "Tune the imported NopSCAD rounded cylinder"
+  },
+  {
+    "name": "support_roundover",
+    "type": "Slider",
+    "description": "Roundover amount for the cylinder edges",
+    "range": "0.1,1.2",
+    "defaultValue": "0.55"
+  },
+  {
+    "name": "support_radius",
+    "type": "Slider",
+    "description": "Radius parameter passed to the rounded cylinder helper",
+    "range": "0.4,2.5",
+    "defaultValue": "1.15"
+  },
+  {
+    "name": "support_chamfer",
+    "type": "Slider",
+    "description": "Chamfer parameter for the rounded cylinder helper",
+    "range": "0.05,0.5",
+    "defaultValue": "0.18"
+  },
+  {
+    "type": "Section",
+    "name": "marker_controls",
+    "label": "Marker Sphere",
+    "description": "Optional marker primitive composed in JSCAD"
+  },
+  {
+    "name": "show_marker",
+    "type": "Checkbox",
+    "description": "Include the marker sphere",
+    "defaultValue": true
+  },
+  {
+    "name": "marker_offset_xyz",
+    "type": "Vector3",
+    "description": "Position of the marker sphere",
+    "defaultValue": [1.2, 0.25, 0.25],
+    "step": "0.1",
+    "visibleWhen": {
+      "field": "show_marker",
+      "operator": "truthy"
+    }
+  },
+  {
+    "name": "marker_radius",
+    "type": "Slider",
+    "description": "Radius of the marker sphere",
+    "range": "0.2,1.5",
+    "defaultValue": "0.55",
+    "visibleWhen": {
+      "field": "show_marker",
+      "operator": "truthy"
+    }
+  },
+  {
+    "type": "Section",
+    "name": "presentation_controls",
+    "label": "Presentation",
+    "description": "Viewer-friendly transforms applied after composition"
+  },
+  {
+    "name": "display_scale",
+    "type": "Slider",
+    "description": "Scale the combined showcase model uniformly",
+    "range": "0.4,1.8",
+    "defaultValue": "1"
+  },
+  {
+    "name": "yaw_deg",
+    "type": "Slider",
+    "description": "Rotate the showcase model around the Z axis",
+    "range": "-180,180",
+    "defaultValue": "0"
+  }
+]
